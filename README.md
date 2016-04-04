@@ -1,3 +1,3 @@
 # Bmsit-Notifier
-App works on both android as well as mobile browser
-still need Update,
+This is a Web Application for BMSIT
+This App is going to work on Android as well as webbrowser.

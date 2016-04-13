@@ -1,9 +1,9 @@
 <?php
 echo "<script>console.log('Entered');</script>";
-define('DB_SERVER', 'localhost');
-define('DB_USERNAME', 'root');
-define('DB_PASSWORD', '');
-define('DB_DATABASE', 'bms_notif');
+define('DB_SERVER', 'mysql.hostinger.in');
+define('DB_USERNAME', 'u990132261_ajith');
+define('DB_PASSWORD', 'bmsitnotify');
+define('DB_DATABASE', 'u990132261_bmsit');
 
 $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 

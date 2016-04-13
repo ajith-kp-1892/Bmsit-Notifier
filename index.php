@@ -67,7 +67,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<span class="input-group-addon" id="sizing-addon2">@</span>
 						<input type="text" class="form-control" placeholder="Usn" id="usn" aria-describedby="sizing-addon2">
 					</div><br>
-					<div class="col-md-8" id="from-to-section" style="display: inline-flex;">
+					<div class="input-group" id="from-to-section" style="display: inline-flex;">
 					<span class="input-group-addon" id="sizing-addon2">@</span>
 						<select id="department_id" class="form-control">
 							<option value="0">Select One</option>

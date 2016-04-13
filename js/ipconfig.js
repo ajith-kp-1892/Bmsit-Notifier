@@ -1,1 +1,1 @@
-var ip='192.168.10.10';
+var ip='notify-me.pe.hu';

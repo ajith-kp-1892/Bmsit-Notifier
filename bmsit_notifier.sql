@@ -10,12 +10,12 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
--- Dumping database structure for bms_notif
-CREATE DATABASE IF NOT EXISTS `bms_notif` /*!40100 DEFAULT CHARACTER SET latin1 */;
-USE `bms_notif`;
+-- Dumping database structure for u990132261_bmsit
+CREATE DATABASE IF NOT EXISTS `u990132261_bmsit` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `u990132261_bmsit`;
 
 
--- Dumping structure for table bms_notif.admin
+-- Dumping structure for table u990132261_bmsit.admin
 CREATE TABLE IF NOT EXISTS `admin` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(30) NOT NULL,
@@ -25,19 +25,19 @@ CREATE TABLE IF NOT EXISTS `admin` (
   UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Dumping data for table bms_notif.admin: ~0 rows (approximately)
+-- Dumping data for table u990132261_bmsit.admin: ~0 rows (approximately)
 /*!40000 ALTER TABLE `admin` DISABLE KEYS */;
 /*!40000 ALTER TABLE `admin` ENABLE KEYS */;
 
 
--- Dumping structure for table bms_notif.department
+-- Dumping structure for table u990132261_bmsit.department
 CREATE TABLE IF NOT EXISTS `department` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `department` varchar(10) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=latin1;
 
--- Dumping data for table bms_notif.department: ~0 rows (approximately)
+-- Dumping data for table u990132261_bmsit.department: ~0 rows (approximately)
 /*!40000 ALTER TABLE `department` DISABLE KEYS */;
 INSERT IGNORE INTO `department` (`id`, `department`) VALUES
 	(1, 'MCA'),
@@ -51,7 +51,7 @@ INSERT IGNORE INTO `department` (`id`, `department`) VALUES
 /*!40000 ALTER TABLE `department` ENABLE KEYS */;
 
 
--- Dumping structure for table bms_notif.event
+-- Dumping structure for table u990132261_bmsit.event
 CREATE TABLE IF NOT EXISTS `event` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `event_title` varchar(200) NOT NULL,
@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `event` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
--- Dumping data for table bms_notif.event: ~4 rows (approximately)
+-- Dumping data for table u990132261_bmsit.event: ~4 rows (approximately)
 /*!40000 ALTER TABLE `event` DISABLE KEYS */;
 INSERT IGNORE INTO `event` (`id`, `event_title`, `event_description`, `event_venue`, `event_date`, `author`) VALUES
 	(1, 'Event 1', 'sdvhahvd', 'Seminar hall', '0000-00-00 00:00:00', 'Ajith'),
@@ -72,7 +72,7 @@ INSERT IGNORE INTO `event` (`id`, `event_title`, `event_description`, `event_ven
 /*!40000 ALTER TABLE `event` ENABLE KEYS */;
 
 
--- Dumping structure for table bms_notif.notification
+-- Dumping structure for table u990132261_bmsit.notification
 CREATE TABLE IF NOT EXISTS `notification` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `subject` varchar(15) NOT NULL,
@@ -82,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `notification` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
--- Dumping data for table bms_notif.notification: ~5 rows (approximately)
+-- Dumping data for table u990132261_bmsit.notification: ~5 rows (approximately)
 /*!40000 ALTER TABLE `notification` DISABLE KEYS */;
 INSERT IGNORE INTO `notification` (`id`, `subject`, `description`, `date`, `author`) VALUES
 	(1, 'Report', 'please submit your report by tommarow 9.30 without fail', '0000-00-00 00:00:00', 'H.O.D'),
@@ -93,7 +93,7 @@ INSERT IGNORE INTO `notification` (`id`, `subject`, `description`, `date`, `auth
 /*!40000 ALTER TABLE `notification` ENABLE KEYS */;
 
 
--- Dumping structure for table bms_notif.student
+-- Dumping structure for table u990132261_bmsit.student
 CREATE TABLE IF NOT EXISTS `student` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(30) NOT NULL,
@@ -108,7 +108,7 @@ CREATE TABLE IF NOT EXISTS `student` (
   CONSTRAINT `FK_DEPARTMENT` FOREIGN KEY (`department_id`) REFERENCES `department` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Dumping data for table bms_notif.student: ~0 rows (approximately)
+-- Dumping data for table u990132261_bmsit.student: ~0 rows (approximately)
 /*!40000 ALTER TABLE `student` DISABLE KEYS */;
 /*!40000 ALTER TABLE `student` ENABLE KEYS */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;

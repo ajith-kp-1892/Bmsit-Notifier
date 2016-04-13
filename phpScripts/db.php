@@ -1,6 +1,6 @@
 <?php
 echo "<script>console.log('Entered');</script>";
-define('DB_SERVER', 'sql29.hostinger.in');
+define('DB_SERVER', 'mysql.hostinger.in');
 define('DB_USERNAME', 'u990132261_ajith');
 define('DB_PASSWORD', 'bmsitnotify');
 define('DB_DATABASE', 'u990132261_bmsit');

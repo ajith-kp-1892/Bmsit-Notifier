@@ -52,9 +52,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 						<nav class="cl-effect-13" id="cl-effect-13">
 							<ul class="nav navbar-nav">
-								<li><a href="events.html">News & Events</a></li>
-								<li><a href="services.html" class="active">Services</a></li>
-								<li><a href="mail.html">Mail Us</a></li>
+								<li><a href="events.php">News & Events</a></li>
+								<li><a href="services.php" class="active">Services</a></li>
+								<li><a href="mail.php">About Us</a></li>
 							</ul>
 						</nav>
 					</div>

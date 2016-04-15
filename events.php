@@ -20,10 +20,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- js -->
 <script src="js/jquery-1.11.1.min.js"></script>
-<script src="js/ipconfig.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
 <script src="js/notificationController.js"></script>
+<!-- //js -->
 <script src="js/bootstrap.js"></script>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+</head>
+<script src="js/ipconfig.js"></script>
+<script src="js/eventController.js"></script>
 <!-- //js -->
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
@@ -52,9 +57,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 						<nav class="cl-effect-13" id="cl-effect-13">
 							<ul class="nav navbar-nav">
-								<li><a href="events.html">News & Events</a></li>
-								<li><a href="services.html" class="active">Services</a></li>
-								<li><a href="mail.html">Mail Us</a></li>
+								<li><a href="events.php"  class="active">News & Events</a></li>
+								<li><a href="services.php">Services</a></li>
+								<li><a href="mail.php">About Us</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -63,35 +68,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 		</div>
 	</div>
-<!-- //bannner -->
-<!-- services -->
-	<div class="services"  ng-controller="NotificationController">
+	
+	<div class="news" ng-controller="EventController">
 		<div class="container">
-			<h3><span></span> Notifications</h3>
-			<p class="dolore">Consectetur adipiscing elit, sed do 
-				eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
-				minim veniam.
-			</p>
-			<div class="services-grids"  ng-repeat="notify in notificationData">
-				<div class="col-md-7 services-grid-right">
-					<div class="services-grid-right1" >
-						<div class="col-xs-4">
-							<div class="services-grid-right1-left1">
-								<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
-							</div>
+			<h3><span>Latest</span> Events</h3>
+			<p class="dolore"></p>
+			<div class="news-grids">
+				<div class="col-md-4 news-grid" ng-repeat="event in eventsData">
+					<div class="news-grid1">
+						<div class="news-grid1-sub">
+							<h4><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+								{{event.date}}  @  {{event.venue}}</h4>
+							<h5>{{event.title}}</h5>
+							<p>{{event.desc}}</p>
 						</div>
-						<div class="col-xs-8 services-grid-right1-right">
-							<h4>{{notify.subject}}</h4>
-							<p>{{notify.desc}}</p>
-							<p style="float:left;"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>&nbsp{{notify.date}}</p>
-							<p style="float:right;">{{notify.author}}</p>
-						</div>
-						<div class="clearfix"> </div>
+						<img src="images/1.jpg" alt=" " class="img-responsive" />
 					</div>
-				<div class="clearfix"> </div>
 				</div>
+				<div class="clearfix"> </div>
 			</div>
-			</div>
-	</div>			
+		</div>
+	</div>
 </body>
 </html>

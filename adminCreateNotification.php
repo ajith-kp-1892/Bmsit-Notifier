@@ -22,7 +22,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='//fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
 </head>
 <script src="js/ipconfig.js"></script>
-<script src="js/eventController.js"></script>
+<link href="css/bootstrap-combined.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen"
+     href="css/bootstrap-datetimepicker.min.css">
 <!-- //js -->
 <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
@@ -51,9 +53,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 						<nav class="cl-effect-13" id="cl-effect-13">
 							<ul class="nav navbar-nav">
-								<li><a href="events.html"  class="active">News & Events</a></li>
-								<li><a href="services.html">Services</a></li>
-								<li><a href="mail.html">Mail Us</a></li>
+								<li><a href="events.php"  class="active">News & Events</a></li>
+								<li><a href="services.php">Services</a></li>
+								<li><a href="mail.php">About Us</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -69,12 +71,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			
 			<div class="col-md-6 mail-left">
-				<h3>Create a <span>Event</span></h3>
+				<h3>Create a <span>Notification</span></h3>
 				<form>
-					<input type="text" placeholder="Title" required=" ">
-					<input type="email" placeholder="date" required=" ">
+					<input type="text" placeholder="Subject" required=" ">
+					<div id="datetimepicker" class="input-append date">
+						 <input type="text"></input>
+						  <span class="add-on" style="position:relative">
+							  <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
+						 </span>
+					    </div>
 					<div class="clearfix"> </div>
-					<input type="text" placeholder="venue" required=" ">
+					<input type="text" placeholder="author" required=" ">
 					<textarea placeholder="Type Your Description Here...." required=" "></textarea>
 					<input type="submit" value="Submit">
 				</form>
@@ -82,7 +89,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="clearfix"> </div>
 		</div>
 	</div>
-	
+	 <script type="text/javascript"
+     src="js/jquery.min.js">
+    </script> 
+    <script type="text/javascript"
+     src="js/bootstrap.min.js">
+    </script>
+    <script type="text/javascript"
+     src="js/bootstrap-datetimepicker.min.js">
+    </script>
+    <script type="text/javascript">
+      $('#datetimepicker').datetimepicker({
+        format: 'dd/MM/yyyy hh:mm:ss',
+		language: 'en',
+      });
+    </script>
 
 
 	

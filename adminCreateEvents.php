@@ -74,17 +74,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			
 			<div class="col-md-6 mail-left">
 				<h3>Create a <span>Event</span></h3>
-				<form>
-					<input type="text" placeholder="Title" required=" ">
-					<div id="datetimepicker" class="input-append date">
-						 <input type="text"></input>
+				<form method="post" action="createEvent.php">
+					<input type="text" name="title" placeholder="Title" required=" ">
+					<div id="datetimepicker" class="input-append date" onchange="validateDate()">
+						 <input type="text" name="event_date"></input>
 						  <span class="add-on" style="position:relative">
 							  <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
 						 </span>
 					    </div>
 					<div class="clearfix"> </div>
-					<input type="text" placeholder="venue" required=" ">
-					<textarea placeholder="Type Your Description Here...." required=" "></textarea>
+					<input type="text" name="venue" placeholder="venue" required=" ">
+					<textarea name="description" placeholder="Type Your Description Here...." required=" "></textarea>
 					<input type="submit" value="Submit">
 				</form>
 			</div>
@@ -108,5 +108,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       });
     </script>
 <script src="js/bootstrap.js"></script>	
+<script type="text/javascript">
+	function validateDate(){
+		console.log('Entered');
+		var date = $('#event_date').val(),
+			checkdate = new Date();
+			console.log(date + " " + checkdate);
+
+			if(date < checkdate){
+				$('#event_date').css('border-color','red');
+				return false;
+			}
+	}
+</script>
 </body>
 </html>

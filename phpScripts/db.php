@@ -1,5 +1,5 @@
 <?php
-echo "<script>console.log('Entered');</script>";
+//echo "<script>console.log('Entered');</script>";
 define('DB_SERVER', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', '');

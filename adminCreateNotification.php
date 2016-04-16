@@ -1,3 +1,6 @@
+<?php
+include_once "phpScripts/session.php";
+?>
 <!DOCTYPE html>
 <html ng-app>
 <head>

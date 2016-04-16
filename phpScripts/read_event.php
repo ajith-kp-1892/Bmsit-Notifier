@@ -1,4 +1,5 @@
 <?php
+include_once "session.php";
 include_once('db.php');
 
 $fetchEvents = "SELECT e.event_title,e.event_description,e.event_venue,e.event_date,e.author

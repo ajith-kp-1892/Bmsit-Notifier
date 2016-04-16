@@ -1,7 +1,7 @@
 <?php
 
+include_once "session.php";
 include 'db.php';
-include 'ajaxresponse.php';
 
 $fetchNotifications = "select * from notification";
 $execFetchNotifications = mysqli_query($db,$fetchNotifications);
@@ -20,5 +20,4 @@ if ($rows > 0) {
     echo "No results found";
 }
 
-mysqli_close();
-?>
+mysqli_

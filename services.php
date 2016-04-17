@@ -79,7 +79,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</div>
 						<div class="col-xs-8 services-grid-right1-right">
 							<h4>{{notify.subject}}</h4>
-							<p>{{notify.desc}}</p>
+							<p>{{notify.description}}</p>
 							<p style="float:left;"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>&nbsp{{notify.date}}</p>
 							<p style="float:right;">{{notify.author}}</p>
 						</div>

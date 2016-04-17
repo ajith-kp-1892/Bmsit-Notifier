@@ -75,9 +75,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="news-grid1">
 						<div class="news-grid1-sub">
 							<h4><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-								{{event.date}}  @  {{event.venue}}</h4>
-							<h5>{{event.title}}</h5>
-							<p>{{event.desc}}</p>
+								{{event.event_date}}  @  {{event.event_venue}}</h4>
+							<h5>{{event.event_title}}</h5>
+							<p>{{event.event_description}}</p>
 						</div>
 						<img src="images/1.jpg" alt=" " class="img-responsive" />
 					</div>

@@ -1,5 +1,9 @@
 <?php
 include_once "phpScripts/session.php";
+//Check admin or not
+if($_SESSION['h_id'] != 1){	
+	header('Location: index.php');
+}
 ?>
 <!DOCTYPE html>
 <html ng-app>
@@ -78,12 +82,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h3>Create a <span>Event</span></h3>
 				<form>
 					<input type="text" placeholder="Title" required=" ">
+					<
 					<div id="datetimepicker" class="input-append date">
 						 <input type="text"></input>
 						  <span class="add-on" style="position:relative">
 							  <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
 						 </span>
-					    </div>
+					</div>
 					<div class="clearfix"> </div>
 					<input type="text" placeholder="venue" required=" ">
 					<textarea placeholder="Type Your Description Here...." required=" "></textarea>

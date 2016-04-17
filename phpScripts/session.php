@@ -1,6 +1,7 @@
 <?php
 session_start();
-if(!isset($_SESSION['email'])){
-	header('Location: index.php');
+
+if(!isset($_SESSION['email']) && !isset($_SESSION['h_id'])){
+	header('Location: ../index.php');
 }
 ?>

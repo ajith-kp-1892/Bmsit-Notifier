@@ -30,7 +30,7 @@
 				session_start();
 				$_SESSION['email'] = $email;
 				$_SESSION['h_id'] = 2;
-				header('Location: read_notif.php');
+				header('Location: ../events.php');
 			}
 			else{
 				echo '<script>console.log("Invalid choice");</script>';

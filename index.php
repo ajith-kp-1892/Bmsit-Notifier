@@ -45,11 +45,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<form action="phpScripts/login.php" name="logindata" method="post">
 						<div class="input-group" style="display: inline-flex;">
 							<span class="input-group-addon" id="sizing-addon2">@</span>
-							<input type="email" class="form-control" placeholder="E-mail" name="email1" aria-describedby="sizing-addon2">
+							<input type="email" class="form-control" placeholder="E-mail" name="email1" aria-describedby="sizing-addon2" required=" ">
 						</div><br>
 						<div class="input-group" style="display: inline-flex;">
 							<span class="input-group-addon" id="sizing-addon2">@</span>
-							<input type="password" class="form-control" placeholder="Password" name="password1" aria-describedby="sizing-addon2">
+							<input type="password" class="form-control" placeholder="Password" name="password1" aria-describedby="sizing-addon2" required=" ">
 						</div><br>
 						<input type="submit" value="Log In"/>
 					</form>
@@ -59,19 +59,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<form action="phpScripts/register.php" name="registerdata" method="post">
 					<div class="input-group" style="display: inline-flex;">
 						<span class="input-group-addon" id="sizing-addon2">&#9786</span>
-						<input type="text" class="form-control" placeholder="Username" name="username" aria-describedby="sizing-addon2">
+						<input type="text" class="form-control" placeholder="Username" name="username" aria-describedby="sizing-addon2" required=" ">
 					</div><br>
 					<div class="input-group" style="display: inline-flex;">
 						<span class="input-group-addon" id="sizing-addon2">@</span>
-						<input type="email" class="form-control" placeholder="Email" name="email" aria-describedby="sizing-addon2">
+						<input type="email" class="form-control" placeholder="Email" name="email" aria-describedby="sizing-addon2" required=" ">
 					</div><br>
 					<div class="input-group" style="display: inline-flex;">
 						<span class="input-group-addon" id="sizing-addon2">@</span>
-						<input type="text" class="form-control" placeholder="Usn" name="usn" aria-describedby="sizing-addon2">
+						<input type="text" class="form-control" placeholder="Usn" name="usn" aria-describedby="sizing-addon2" required=" ">
 					</div><br>
 					<div class="input-group" id="from-to-section" style="display: inline-flex;">
 					<span class="input-group-addon" id="sizing-addon2">@</span>
-						<select name="department_id" class="form-control">
+						<select name="department_id" class="form-control" required=" ">
 							<option value="0">Select Department</option>
 	                        <option value="1">MCA</option>
 	                        <option value="2">MECH</option>
@@ -85,11 +85,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div></br>
 					<div class="input-group" style="display: inline-flex;">
 						<span class="input-group-addon" id="sizing-addon2">@</span>
-						<input type="password" class="form-control" placeholder="Password" name="password" aria-describedby="sizing-addon2">
+						<input type="password" class="form-control" placeholder="Password" name="password" aria-describedby="sizing-addon2" required=" ">
 					</div><br>
 					<div class="input-group" style="display: inline-flex; align:left;">
 						<span class="input-group-addon" id="sizing-addon2">@</span>
-						<input type="password" class="form-control" placeholder="Confirm Password" name="confirm_password" aria-describedby="sizing-addon2">
+						<input type="password" class="form-control" placeholder="Confirm Password" name="confirm_password" aria-describedby="sizing-addon2" required=" ">
 					</div><br>
 					<input type="submit" value="Register"/>
 				</form>

@@ -13,7 +13,8 @@ if ($count > 0) {
          
 		$rows[$i++] = $row;
     }
-	header('Content-Type: application/json');
+	header('content-type: application/json; charset=utf-8');
+	header("access-control-allow-origin: *");
 	echo json_encode($rows);
 	
 } else {

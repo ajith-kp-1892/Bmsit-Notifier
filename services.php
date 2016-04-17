@@ -49,9 +49,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 						<nav class="cl-effect-13" id="cl-effect-13">
 							<ul class="nav navbar-nav">
-								<li><a href="events.php">News & Events</a></li>
-								<li><a href="services.php" class="active">Services</a></li>
-								<li><a href="mail.php">About Us</a></li>
+								<li><a href="events.php">Events</a></li>
+								<li><a href="services.php" class="active">Notification</a></li>
+								<li><a href="phpScripts/logout.php">Logout</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -64,11 +64,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- services -->
 	<div class="services"  ng-controller="NotificationController">
 		<div class="container">
-			<h3><span></span> Notifications</h3>
-			<p class="dolore">Consectetur adipiscing elit, sed do 
-				eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
-				minim veniam.
-			</p>
+			<h3><span>Latest</span> Notifications</h3>
 			<div class="services-grids"  ng-repeat="notify in notificationData">
 				<div class="col-md-7 services-grid-right">
 					<div class="services-grid-right1" >

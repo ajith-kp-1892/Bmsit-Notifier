@@ -40,8 +40,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<li role="presentation" class="active"><a href="#loginUser" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Login</a></li>
 				<li role="presentation"><a href="#registerUser" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Sign Up</a></li>
 			</ul>
-			<div id="myTabContent" class="tab-content" id="loginUser">
-				<div role="tabpanel" class="tab-pane fade in active" aria-labelledby="home-tab">
+			<div id="myTabContent" class="tab-content">
+				<div role="tabpanel" class="tab-pane fade in active" aria-labelledby="home-tab" id="loginUser">
 					<form action="phpScripts/login.php" name="logindata" method="post">
 						<div class="input-group" style="display: inline-flex;">
 							<span class="input-group-addon" id="sizing-addon2">@</span>

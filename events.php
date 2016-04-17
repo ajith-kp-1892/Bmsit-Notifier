@@ -36,7 +36,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="banner1">
 		<div class="container">
 			<div class="logo">
-				<a href="index.html">B.M.S Institute of Technology and Management <span>Bangalore</span></a>
+				<a href="index.php">B.M.S Institute of Technology and Management <span>Bangalore</span></a>
 			</div>
 			<div class="navigation">
 				<nav class="navbar navbar-default">

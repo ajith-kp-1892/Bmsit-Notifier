@@ -62,7 +62,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							<ul class="nav navbar-nav">
 								<li><a href="adminCreateEvents.php" class="active">Event Creation</a></li>
 								<li><a href="adminCreateNotification.php">Notification Creation</a></li>
-								<li><a href="adminEventsList.php" class="active">Events</a></li>
+								<li><a href="adminEventsList.php">Events</a></li>
 								<li><a href="adminNotificationList.php">Notification</a></li>
 								<li><a href="phpScripts/logout.php">Logout</a></li>
 							</ul>

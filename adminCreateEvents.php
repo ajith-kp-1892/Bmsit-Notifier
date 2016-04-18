@@ -80,18 +80,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			
 			<div class="col-md-6 mail-left">
 				<h3>Create a <span>Event</span></h3>
-				<form>
-					<input type="text" placeholder="Title" required=" ">
-					<
+				<form method="POST" action="phpScripts/createEvent.php">
+					<input type="text" placeholder="Title" name="title" required>
 					<div id="datetimepicker" class="input-append date">
-						 <input type="text"></input>
+						 <input type="text" placeholder="Event date" name="event-date" required></input>
 						  <span class="add-on" style="position:relative">
 							  <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
 						 </span>
 					</div>
 					<div class="clearfix"> </div>
-					<input type="text" placeholder="venue" required=" ">
-					<textarea placeholder="Type Your Description Here...." required=" "></textarea>
+					<input type="text" placeholder="Venue" name="venue" required>
+					<textarea placeholder="Type Your Description Here...." name="description" required></textarea>
 					<input type="submit" value="Submit">
 				</form>
 			</div>

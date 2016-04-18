@@ -1,5 +1,9 @@
 <?php
 	include_once "phpScripts/session.php";
+	//Check admin or not
+	if($_SESSION['h_id'] != 1){	
+	header('Location: index.php');
+}
 ?>
 <!DOCTYPE html>
 <html ng-app>

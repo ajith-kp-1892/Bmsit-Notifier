@@ -42,7 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="banner1">
 		<div class="container">
 			<div class="logo">
-				<a href="index.php">B.M.S Institute of Technology and Management <span>Bangalore</span></a>
+				<a href="">B.M.S Institute of Technology and Management <span>Bangalore</span></a>
 			</div>
 			<div class="navigation">
 				<nav class="navbar navbar-default">
@@ -107,18 +107,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script type="text/javascript"
      src="js/bootstrap-datetimepicker.min.js">
     </script>
+    <!-- Calendar -->
     <script type="text/javascript">
       $('#datetimepicker').datetimepicker({
-        format: 'dd/MM/yyyy hh:mm:ss',
-		language: 'en',
+        format: 'yyyy/MM/dd'
       });
     </script>
-
-
-	
-
-
+	<!-- End of Calendar -->
 	<script src="js/bootstrap.js"></script>
-
-
-</body></html>
+</body>
+</html>

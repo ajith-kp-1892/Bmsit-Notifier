@@ -8,16 +8,18 @@
 		try {
 			include_once "db.php";
 
-			if(isset($_POST['title']) && isset($_POST['event-date']) && isset($_POST['venue']) && isset($_POST['description'])){
+			if(isset($_POST['title']) && isset($_POST['date']) && isset($_POST['venue']) && isset($_POST['description'])){
 				$title = $_POST['title'];
-				$event_date = $_POST['event-date'];
+				$date = $_POST['date'];
 				$venue = $_POST['venue'];
 				$description = $_POST['description'];
+				
+				$insertDate  = date("Y-m-d",strtotime($date));
 				
 				$setEvent = mysqli_query($db,"");
 				$author = $_SESSION['email'];
 
-				$setEvent = mysqli_query($db,"INSERT IGNORE INTO event(event_title,event_description,event_venue,event_date,author) VALUES('$title','$description','$venue','$event_date','$author')");
+				$setEvent = mysqli_query($db,"INSERT IGNORE INTO event(event_title,event_description,event_venue,event_date,author) VALUES('$title','$description','$venue','$insertDate','$author')");
 				if(!$setEvent){
 					echo "<script>alert('Event creation failed');</script>";
 					header('Location: ../adminCreateEvents.php');

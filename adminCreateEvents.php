@@ -42,7 +42,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="banner1">
 		<div class="container">
 			<div class="logo">
-				<a href="index.php">B.M.S Institute of Technology and Management <span>Bangalore</span></a>
+				<a href="">B.M.S Institute of Technology and Management <span>Bangalore</span></a>
 			</div>
 			<div class="navigation">
 				<nav class="navbar navbar-default">
@@ -83,7 +83,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<form method="POST" action="phpScripts/createEvent.php">
 					<input type="text" placeholder="Title" name="title" required>
 					<div id="datetimepicker" class="input-append date">
-						 <input type="text" placeholder="Event date" name="event-date" required></input>
+						 <input type="text" placeholder="Event date" name="date" required></input>
 						  <span class="add-on" style="position:relative">
 							  <i data-time-icon="icon-time" data-date-icon="icon-calendar"></i>
 						 </span>
@@ -107,12 +107,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script type="text/javascript"
      src="js/bootstrap-datetimepicker.min.js">
     </script>
+    <!-- Calendar -->
     <script type="text/javascript">
       $('#datetimepicker').datetimepicker({
-        format: 'dd/MM/yyyy hh:mm:ss',
-		language: 'en',
+        format: 'yyyy/MM/dd'
       });
     </script>
+	<!-- End of Calendar -->
 <script src="js/bootstrap.js"></script>	
 </body>
 </html>

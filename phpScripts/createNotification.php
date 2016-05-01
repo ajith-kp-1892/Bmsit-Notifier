@@ -14,7 +14,9 @@
 				$author = $_POST['author'];
 				$description = $_POST['description'];
 
-				$setEvent = mysqli_query($db,"INSERT IGNORE INTO notification(subject,description,date,author) VALUES('$subject','$description','$date','$author')");
+				$insertDate  = date("Y-m-d",strtotime($date));
+
+				$setEvent = mysqli_query($db,"INSERT IGNORE INTO notification(subject,description,date,author) VALUES('$subject','$description','$insertDate','$author')");
 				if(!$setEvent){
 					echo "<script>alert('Event creation failed');</script>";
 					header('Location: ../adminCreateNotification.php');

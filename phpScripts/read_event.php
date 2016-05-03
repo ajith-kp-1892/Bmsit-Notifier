@@ -2,7 +2,7 @@
 	
 	include_once "session.php";
 	//Check student or not
-	if($_SESSION['h_id'] != 2){	
+	if($_SESSION['h_id'] != 2 || $_SESSION['h_id'] != 1){	
 		header('Location: ../index.php');
 	}
 	else{

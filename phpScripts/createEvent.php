@@ -1,7 +1,8 @@
 <?php
 	include_once "session.php";
 	//Check admin or not
-	if($_SESSION['h_id'] != 1){	
+	if($_SESSION['h_id'] != 1){
+		session_destroy();
 		header('Location: ../index.php');
 	}
 	else{
